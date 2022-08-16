@@ -1,0 +1,19 @@
+# build artefacts
+smarttable.sketchplugin
+
+# npm
+node_modules
+.npm
+npm-debug.log
+
+# resources
+resources
+
+# mac
+.DS_Store
+
+# WebStorm
+.idea
+
+# sketch
+# sketch-assets

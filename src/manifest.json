@@ -1,0 +1,38 @@
+{
+  "name": "SmartTable",
+  "version":"1.0.12",
+  "description": "Quickly create and organize tables",
+  "icon":"icon.png",
+  "author": "Yeatfish",
+  "authorEmail":"yucyuy@gmail.com",
+  "homepage": "https://github.com/Penndo/smartTable",
+  "identifier": "design.smarttable.yeatfish",
+  "compatibleVersion": "52.1",
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "CreateTable",
+      "identifier": "CreateTable",
+      "shortcut":"ctrl shift t",
+      "script": "./CreateTable.js",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "Shutdown": "onShutdown"
+        }
+      }
+    },
+    {
+      "name": "ArrangeCells",
+      "identifier": "ArrangeCells",
+      "shortcut":"ctrl shift b",
+      "script": "./ArrangeCells.js"
+    }
+  ],
+  "menu": {
+    "title": "🦾SmartTable",
+    "items": [
+      "CreateTable","ArrangeCells"
+    ]
+  }
+}
