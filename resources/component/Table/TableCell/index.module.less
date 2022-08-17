@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+td {
+    position:relative;
+    outline:"none";
+    input{
+        /* 清除默认的输入框样式 */
+        -webkit-appearance:none;
+        -moz-appearance: none;
+        outline: 0;
+        /* 设置新的默认样式 */
+        padding: 0;
+        font-size: 14px;
+        border-style:hidden;
+        background-color: transparent;
+        cursor: default;
+        margin: 0;
+        caret-color:transparent;
+    }
+    .input::selection{
+        background-color: transparent;
+    }
+    .focusInput {
+        cursor: text;
+        caret-color:auto;
+    }
+}

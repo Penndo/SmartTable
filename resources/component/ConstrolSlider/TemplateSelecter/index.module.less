@@ -1,0 +1,42 @@
+.selecter{
+    div{
+        display: flex;
+    }
+    position: relative;
+    input{
+        /*box-sizing需要设置为border-box不然margin，padding会影响到width的宽度布局*/
+        box-sizing: border-box;
+        width:100%;
+        -webkit-appearance:none;
+        -moz-appearance: none;
+        outline: 0;
+        cursor: pointer;
+        /* 设置新的默认样式 */
+        padding: 4px 8px;
+        font-size: 12px;
+        border: 1px solid rgb(216, 216, 216);
+        border-radius: 6px;
+        line-height: 14px; 
+        margin-right: 8px;
+        &::placeholder{
+            color: #a3a3a3;
+        }
+        &:hover{
+            border: 1px solid rgb(0, 85, 196);
+            transition: 0.2s;
+        }
+        &:focus{
+            border: 1px solid rgb(0, 85, 196);
+            box-shadow: 0 0 0 2px rgb(177, 211, 255);
+            transition: 0.2s;
+        }
+    }
+    
+    .preInstall{
+        position: absolute;
+        margin-top: 4px;
+        // width: 100%;
+        width:calc(100% - 48px);
+        z-index: 100;
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "smarttable",
+  "version": "1.0.20",
+  "repository": "https://github.com/Penndo/smartTable.git",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "SmartTable",
+    "manifest": "src/manifest.json",
+    "main": "SmartTable.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.4",
+    "@skpm/extract-loader": "^2.0.2",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5",
+    "less": "^4.1.2",
+    "less-loader": "^7.2.1",
+    "style-loader": "^2.0.0"
+  },
+  "resources": [
+    "resources/**/*.js"
+  ],
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-dom": "^17.0.2",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "sketch-module-google-analytics": "^0.2.2",
+    "sketch-module-web-view": "^3.1.4",
+    "uuid": "^8.3.2"
+  },
+  "author": "Penndo <yucyuy@gmail.com>"
+}

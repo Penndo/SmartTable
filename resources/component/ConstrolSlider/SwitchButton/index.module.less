@@ -1,0 +1,55 @@
+.radio{
+    position: relative;
+    height: 28px;
+    background-color:white;
+    display: flex;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    input {
+        display: none;
+        -webkit-appearance:none;
+        -moz-appearance: none;
+        outline: 0;
+        /* 设置新的默认样式 */
+        padding: 10px 8px;
+        font-size: 14px;
+        border:none;
+        border-radius: 8px;
+    }
+    
+    label {
+        cursor: pointer;
+        z-index: 2;
+        width: 72px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .selectedBg {
+        position: absolute;
+        width: 130px;
+        height: 24px;
+        background: #464a53;
+        border-radius: 6px;
+    }
+    
+    .big:checked + label, .normal:checked + label{
+        color: white;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .big:checked ~ .selectedBg {
+        transform: translateX(-69px);
+        transition: 0.2s ease-in-out;
+    }
+
+    .normal:checked ~ .selectedBg {
+        transform: translateX(69px);
+        transition: 0.2s ease-in-out;
+    }
+  }
+
+  

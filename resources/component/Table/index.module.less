@@ -1,0 +1,109 @@
+.leftPart {
+    width: 100%;
+    height: 100vh;
+    padding-left: 24px;
+    overflow: scroll;
+    position: relative;
+}
+
+.tableContainer{
+    position: relative;
+}
+
+.dragAnchor{
+    position: absolute;
+    right:0;
+    display:inline-block;
+    width:4px;
+    height:100%;
+    background-color:rgb(255, 0, 0);
+    opacity: 1;
+}
+
+.dragAnchor:hover{
+    opacity: 1;
+    background-color:black;
+}
+
+.rightPanel {
+    z-index: 500;
+    position: fixed;
+}
+
+.mark {
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+    caret-color: transparent;
+    border:2px solid #2B7EFF;
+    background-color: transparent;
+    &:focus{
+        outline: none;
+    }
+}
+
+.colID {
+    display: flex;
+    margin: 24px 0;
+    height: 24px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    li {
+        list-style: none;
+        border-right: 1px solid #dadada;
+        height: 24px;
+    }
+    li:last-child {
+        border-right: none;
+    }
+}
+
+ul {
+    -webkit-user-select: none;  
+    -khtml-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;  
+    user-select: none;
+}
+
+table {
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;  
+    -khtml-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;  
+    user-select: none;
+    font-size: 14px;
+    border-collapse: collapse;
+    input{
+        /* 清除默认的输入框样式 */
+        -webkit-appearance:none;
+        -moz-appearance: none;
+        outline: 0;
+        /* 设置新的默认样式 */
+        font-size: 14px;
+        border-style:hidden;
+        background-color: transparent;
+        cursor: auto;
+    }
+    .input::selection{
+        color:black;
+        background-color: #fff;
+    }
+    .focusInput {
+        cursor: auto;
+    }
+
+    th, td {
+        box-sizing:border-box;
+    }
+}
+
+
+
+
+
+
