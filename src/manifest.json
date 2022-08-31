@@ -1,6 +1,6 @@
 {
   "name": "SmartTable",
-  "version":"1.0.24",
+  "version":"1.0.26",
   "description": "Quickly create and organize tables",
   "icon":"icon.png",
   "author": "Yeatfish",
@@ -30,7 +30,7 @@
     }
   ],
   "menu": {
-    "title": "🦾SmartTable",
+    "title": "SmartTable",
     "items": [
       "CreateTable","ArrangeCells"
     ]
