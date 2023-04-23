@@ -1,6 +1,6 @@
 {
   "name": "smarttable",
-  "version": "1.0.26",
+  "version": "1.0.30",
   "repository": "https://github.com/Penndo/smartTable.git",
   "engines": {
     "sketch": ">=3.0"
